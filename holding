@@ -1,32 +1,10 @@
-html {
-  background-color: #212121;
-}
-
-* {
-
-  margin: 0px;
-  padding: 0px;
-}
-
-#title {
-  text-size-adjust: none;
-  color: rgb(0, 0, 0);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: 74pt;
-  background-color: #ff0000a6;
-  text-align: center;
-  height: 13vh;
-}
-
 /* START MORE BUTTON
 *
 *
 *
 *
  */
- .morebtn {
+.morebtn {
   float: left;
   left: 0px;
   top: 74px;
@@ -138,7 +116,6 @@ html {
   *
   /* END MENU BUTTON */
 
-
 .welcome {
   background-color: black;
   border-left: 1px solid #ff0000a6;
@@ -150,9 +127,9 @@ html {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  flex-flow: column;
   justify-content: center;
-
-  
+  text-align: center;
 }
 
 .welcome #about {
@@ -164,54 +141,11 @@ html {
   margin-left: 300px;
   margin-right: 300px;
   margin-bottom: 40px;
-  justify-content: center;
-  text-align: center;
 }
 
 .photos {
   display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  padding-right: 0px;
-  padding-bottom: 100px;
+  flex-flow: column;
   margin-left: 100px;
-  margin-right: 0px;
-}
-
-/* .welcomePara {
-  padding-right: 0px;
-  margin-right: 0px;
-} */
-
-#paragraph{
-  margin-top: 0px;
-  margin-left: 0px;
-}
-
-
-footer {
-  background-color: #ff0000a6;
-  height: 25vh;
-  display: flex;
-  flex-flow: row;
-  flex-direction: column;
-  justify-content: center;
-}
-
-footer .form {
-  border: 2px solid #000000a6;
-  margin-left: 400px;
-  margin-right:400px; padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-footer .form #name {
-  block-size: 16px;
-}
-footer .form #email {
-  block-size: 16px;
-}
-
-footer .form #message {
-  block-size: 126px;
+  padding-bottom: 100px;
 }
