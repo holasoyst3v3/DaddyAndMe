@@ -20,11 +20,11 @@ html {
 }
 
 /* START MORE BUTTON
-  *
-  *
-  *
-  *
-   */
+    *
+    *
+    *
+    *
+     */
 .morebtn {
   float: left;
   left: 0px;
@@ -71,19 +71,19 @@ html {
   background-color: #ffffff;
 }
 /* 
-    *
-    *
-    *
-    *
-    *
-    /* END MORE BUTTON */
+      *
+      *
+      *
+      *
+      *
+      /* END MORE BUTTON */
 
 /* START MENU BUTTON
-    *
-    *
-    *
-    *
-     */
+      *
+      *
+      *
+      *
+       */
 .menubtn {
   float: right;
   left: 1820px;
@@ -130,14 +130,14 @@ html {
   background-color: #ffffff;
 }
 /* 
-    *
-    *
-    *
-    *
-    *
-    /* END MENU BUTTON */
+      *
+      *
+      *
+      *
+      *
+      /* END MENU BUTTON */
 
-.post {
+.hackarea {
   background-color: black;
   border-left: 1px solid #ff0000a6;
   border-right: 1px solid #ff0000a6;
@@ -148,7 +148,8 @@ html {
   margin-right: 200px;
 }
 
-#input {
+#btn {
+  background-color: #212121;
   border: 1px solid #ff0000a6;
   padding-left: 70px;
   padding-right: 70px;
@@ -161,17 +162,8 @@ html {
   text-align: center;
 }
 
-.post #postcontent {
-  border: 1px solid #ff0000a6;
-  padding-left: 70px;
-  padding-right: 70px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin-left: 300px;
-  margin-right: 300px;
-  margin-bottom: 40px;
-  justify-content: center;
-  text-align: center;
+#btn:hover {
+  background: #888888;
 }
 
 footer {
@@ -179,25 +171,6 @@ footer {
   height: 17vh;
   display: flex;
   flex-flow: row;
-  flex-direction: column;
+
   justify-content: center;
-}
-
-footer .form {
-  border: 2px solid #000000a6;
-  margin-left: 400px;
-  margin-right: 400px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-footer .form #name {
-  block-size: 16px;
-}
-footer .form #email {
-  block-size: 16px;
-}
-
-footer .form #message {
-  block-size: 126px;
 }
