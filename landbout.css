@@ -3,7 +3,6 @@ html {
 }
 
 * {
-
   margin: 0px;
   padding: 0px;
 }
@@ -25,7 +24,7 @@ html {
 *
 *
 *
- */
+*
  .morebtn {
   float: left;
   left: 0px;
@@ -40,7 +39,7 @@ html {
 
 .dropmore {
   float: left;
-  /* display: inline-block; */
+
 }
 
 .dropmore-content {
@@ -71,13 +70,7 @@ html {
 .dropmore:hover .morebtn {
   background-color: #ffffff;
 }
-/* 
-  *
-  *
-  *
-  *
-  *
-  /* END MORE BUTTON */
+END MORE BUTTON */
 
 /* START MENU BUTTON
   *
@@ -172,22 +165,14 @@ html {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
-  padding-right: 0px;
-  padding-bottom: 100px;
   margin-left: 100px;
-  margin-right: 0px;
+
 }
 
-/* .welcomePara {
-  padding-right: 0px;
-  margin-right: 0px;
-} */
-
-#paragraph{
-  margin-top: 0px;
-  margin-left: 0px;
+#paragraph {
+  top: 100vh;
+  margin-left: 100px;
 }
-
 
 footer {
   background-color: #ff0000a6;
