@@ -12,19 +12,19 @@ const responseSection = document.getElementsByClassName('response-area')[0];
 // handle submits
 getSubmit.addEventListener('click', () => {
     axios
-        .get('http://localhost:5050/api/homepage')
+        .get('/api/homepage')
         .then(res => addToView(res.data))
 });
 
 getParamsSubmit.addEventListener('click', () => {
     axios
-        .get(`http://localhost:5050/api/hompage/${paramsInput.value}`)
+        .get(`/api/hompage/${paramsInput.value}`)
         .then(res => addToView([res.data]))
 });
 
 getQuerySubmit.addEventListener('click', () => {
     axios
-        .get(`http://localhost:5050/api/homepage?item=${queryInput.value}`)
+        .get(`/api/homepage?item=${queryInput.value}`)
         .then(res => addToView(res.data))
 });
 
