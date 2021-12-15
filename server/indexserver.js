@@ -43,6 +43,6 @@ app.use('/media', express.static(path.join(__dirname, '../media')))
 // 
 //
 
+const port = process.env.PORT || 5050;
 
-
-app.listen(5050, () => console.log('SERVER INITIALIZING>>>>>> indexserver.js RUNNING ON PORT:5050'))
+app.listen(port, () => console.log(`SERVER INITIALIZING>>>>>> indexserver.js RUNNING ON PORT:${port}`))
