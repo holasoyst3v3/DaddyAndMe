@@ -48,3 +48,43 @@ function addToView(dataArr) {
         })
     }
 }
+
+
+
+
+
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+//DB CALL BEGIN
+
+const sequelize = require("../server/dbcontroller.js");
+
+const dads = require("../dbModels/dads")
+const post = require("../dbModels/post")
+const auth = require("../dbModels/auth")
+
+dads.hasmany(post,auth);
+
+
+sequelize
+.sync({force: true})
+.then((result) => {
+    console.log(result);
+})
+.catch((err) => {
+    console.log(err);
+});
+
+// DB CALL END
+//
+//
+//
+//
+//
