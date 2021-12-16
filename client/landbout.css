@@ -190,14 +190,54 @@ footer .form {
   border: 2px solid #000000a6;
   margin-left: 400px;
   margin-right:400px; padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
 
-footer .form #name {
-  block-size: 16px;
+footer .submit {
+  left: 864px;
+  top: 1425px;
+  position: absolute;
+  background: rgb(0, 0, 0);
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+  border: solid #ff0000a6;
+
 }
-footer .form #email {
-  block-size: 16px;
+
+footer .contactbtn {
+  float: left;
+  /* display: inline-block; */
+}
+
+footer .hover-contact {
+  display: none;
+  left: 864px;
+  top: 1425px;
+  position: absolute;
+  background-color: #888888;
+  min-width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+footer .hover-contact a {
+  color: #ffffffc5;
+  padding: 12px 16px;
+  font-size: 16px;
+  text-decoration: none;
+  display: block;
+}
+
+footer .hover-contact a:hover {
+  background-color: rgba(255, 0, 0, 0.226);
+}
+
+footer .contactbtn:hover .hover-contact {
+  display: block;
+}
+
+footer .contactbtn:hover .submit {
+  background-color: #ffffff;
 }
 
 /* footer .form #message {
