@@ -1,5 +1,5 @@
 const Sequelize = require("sequelize");
-const sequelize = require("../server/indexserver.js");
+const sequelize = require("../server/dbcontroller");
 
 const dads = sequelize.define("dads", {
   id: {

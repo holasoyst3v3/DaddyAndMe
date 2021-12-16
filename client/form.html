@@ -23,18 +23,16 @@
     <div class="dropmore" style="font-family: 'rye', cursive; display: none;">
         <button class="morebtn" style="font-family: 'rye', cursive">NAVIGATE</button>
         <div class="dropmore-content">
-            <a href="/homepage.html">HOME</a>
-            <a href="/hacks.html">HACKS</a>
-            <a href="/activities.html">ACTIVITES</a>
-            <a href="/index.html">LOG OUT</a>
+          <a href="homepage.html">HOME</a>
+          <a href="hacks.html">HACKS</a>
+          <a href="index.html">LOG OUT</a>
         </div><br>
     </div>
     <div class="dropmenu" style="font-family: 'rye', cursive;">
         <button class="menubtn" style="font-family: 'rye', cursive">MENU</button>
         <div class="dropmenu-content">
-        <a href="">LOG IN</a>
-        <a href="">SIGN UP</a>
-        <a href="/homepage.html">GUEST IN</a>
+        <a href="auth.html">LOG IN/ SIGN UP</a>
+        <a href="homepage.html">GUEST IN</a>
         </div>
     </div>
 
@@ -122,6 +120,7 @@
         let email = document.querySelector(".email");
         let msg = document.querySelector(".message");
         let btn = document.querySelector(".submit");
+        // let contact = document.getElementById("#contact");
 
         btn.addEventListener("click", (e) => {
           e.preventDefault();
@@ -131,6 +130,8 @@
           } else {
               sendmail(name.value, email.value, msg.value)
               success();
+              // document.contact.reset();
+
           }
         });
       }
@@ -169,10 +170,7 @@
       }
     </script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script>
-          // UserID = "user_iBoTmCn0kzMgKC0pDYCuz"
-    // AccessToken = "6d3173b1e82553521e25a6a7dd556f4f"
-    </script>
+
   </body>
   <footer>
 

@@ -23,19 +23,17 @@
     <div class="dropmore" style="font-family: 'rye', cursive">
         <button class="morebtn" style="font-family: 'rye', cursive">NAVIGATE</button>
         <div class="dropmore-content">
-            <a href="/homepage.html">HOME</a>
-            <a href="/hacks.html">HACKS</a>
-            <a href="/activities.html">ACTIVITES</a>
-            <a href="/index.html">LOG OUT</a>
+            <a href="homepage.html">HOME</a>
+            <a href="hacks.html">HACKS</a>
+            <a href="index.html">LOG OUT</a>
         </div><br>
     </div>
     <div class="dropmenu" style="font-family: 'rye', cursive;">
         <button class="menubtn" style="font-family: 'rye', cursive">MENU</button>
         <div class="dropmenu-content">
-            <a href="">LOG IN</a>
-            <a href="">SIGN UP</a>
-            <a href="/homepage.html">GUEST IN</a>
-            <a href="/form.html">CONTACT ME!</a>
+            <a href="auth.html">LOG IN/ SIGN UP</a>
+            <a href="homepage.html">GUEST IN</a>
+            <a href="form.html">CONTACT ME!</a>
         </div>
     </div>
 </head>
@@ -66,6 +64,102 @@
           }
         </style>
 
+<div class="login-container">
+    <form id="contact" method="post">
+      <h3>WELCOME BACK!</h3>
+      <h4>PLEASE ENTER YOUR CREDENTIALS</h4>
+      <fieldset>
+        <input
+          placeholder="Enter Your Email"
+          type="text"
+          tabindex="1"
+          required
+          autofocus
+          class="email"/>
+      </fieldset>
+      <fieldset>
+        <input
+          placeholder="Enter Your Password"
+          type="password"
+          tabindex="2"
+          required
+          class="password"/>
+      </fieldset>
+      <fieldset>
+        <button
+          name="login"
+          type="submit"
+          id="dad-login"
+          data-submit="...Sending"
+          class="login">
+          LOG IN
+        </button>
+        <button
+        name="signup"
+        type="submit"
+        id="dad-signup"
+        data-submit="...Sending"
+        class="signup">
+        SIGN UP
+      </button>
+      </fieldset>
+    </form>
+  </div>
+
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script type="text/javascript">
+      
+    function validate() {
+      let email = document.querySelector(".email");
+      let password = document.querySelector(".password");
+      let btnLog = document.querySelector(".login");
+      let firstName = document.querySelector(".firstName");
+      let lastName = document.querySelector(".lastName")
+      let username = document.querySelector(".username")
+      let btnUp = document.querySelector(".signup");
+
+
+      btnlog.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        if (email.value == "" || password.value == "") {
+          emptyerror();
+        } else {
+            sendmail(name.value, email.value, msg.value)
+            success();
+            // document.contact.reset();
+
+        }
+      });
+    }
+    validate();
+
+    function emptyerror() {
+      swal({
+        icon: "warning",
+        title: "Try again",
+        text: "Fields cannot be empty!",
+      });
+    }
+
+    function error() {
+      swal({
+        icon: "error",
+        title: "Oops...",
+        text: "Something went wrong! Try again.",
+      });
+    }
+
+    function success() {
+      swal({
+        icon: "success",
+        title: "AWESOME!",
+        text: "Welcome back daddy-o!!",
+      });
+    }
+  </script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
     <div>
     </div>
     <img></img>
@@ -74,13 +168,6 @@
 </body>
 
 <footer>
-    <div id="log-button">
-        <button>LOG IN</button>
-        <button>SIGN UP</button>
-        <button>GUEST IN</button>
-        <button>LOG OUT</button>
-    </div>
-
-</footer>
+    </footer>
 
 </html>

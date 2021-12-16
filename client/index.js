@@ -10,23 +10,23 @@ const queryInput = document.getElementById('query-input');
 const responseSection = document.getElementsByClassName('response-area')[0];
 
 // handle submits
-getSubmit.addEventListener('click', () => {
-    axios
-        .get('/api/homepage')
-        .then(res => addToView(res.data))
-});
+// getSubmit.addEventListener('click', () => {
+//     axios
+//         .get('/api/homepage')
+//         .then(res => addToView(res.data))
+// });
 
-getParamsSubmit.addEventListener('click', () => {
-    axios
-        .get(`/api/hompage/${paramsInput.value}`)
-        .then(res => addToView([res.data]))
-});
+// getParamsSubmit.addEventListener('click', () => {
+//     axios
+//         .get(`/api/hompage/${paramsInput.value}`)
+//         .then(res => addToView([res.data]))
+// });
 
-getQuerySubmit.addEventListener('click', () => {
-    axios
-        .get(`/api/homepage?item=${queryInput.value}`)
-        .then(res => addToView(res.data))
-});
+// getQuerySubmit.addEventListener('click', () => {
+//     axios
+//         .get(`/api/homepage?item=${queryInput.value}`)
+//         .then(res => addToView(res.data))
+// });
 
 // handle response
 function addToView(dataArr) {
@@ -49,10 +49,6 @@ function addToView(dataArr) {
     }
 }
 
-
-
-
-
 // 
 // 
 // 
@@ -62,25 +58,69 @@ function addToView(dataArr) {
 // 
 // 
 // 
-//DB CALL BEGIN
-
-const sequelize = require("../server/dbcontroller.js");
-
-const dads = require("../dbModels/dads")
-const post = require("../dbModels/post")
-const auth = require("../dbModels/auth")
-
-dads.hasmany(post,auth);
+//HACKS.HTML FUNCTIONS START
 
 
-sequelize
-.sync({force: true})
-.then((result) => {
-    console.log(result);
-})
-.catch((err) => {
-    console.log(err);
+const sleepOpen = document.getElementById("sleep-open");
+const feedOpen = document.getElementById("feed-open");
+const diaperOpen = document.getElementById("diaper-open");
+const sleep_container = document.getElementById("sleep-container");
+const feed_container = document.getElementById("feed-container");
+const diaper_container = document.getElementById("diaper-container");
+const sleepClose = document.getElementById("sleep-close");
+const feedClose = document.getElementById("feed-close");
+const diaperClose = document.getElementById("diaper-close");
+
+
+sleepOpen.addEventListener('click', () =>{
+    feed_container.style.visibility = 'hidden';
+    diaper_container.style.visibility = 'hidden';
+    sleep_container.style.visibility = 'visible';
 });
+sleepClose.addEventListener('click', () =>{
+    sleep_container.style.visibility = 'hidden';
+});
+feedOpen.addEventListener('click', () =>{
+    sleep_container.style.visibility = 'hidden';
+    diaper_container.style.visibility = 'hidden';
+    feed_container.style.visibility = 'visible';
+});
+feedClose.addEventListener('click', () =>{
+    feed_container.style.visibility = 'hidden';
+});
+diaperOpen.addEventListener('click', () =>{
+    sleep_container.style.visibility = 'hidden';
+    feed_container.style.visibility = 'hidden';
+    diaper_container.style.visibility = 'visible';
+});
+diaperClose.addEventListener('click', () =>{
+    diaper_container.style.visibility = 'hidden';
+});
+
+// HACKS.HTML FUNCTIONS END
+// 
+// 
+// 
+// 
+// 
+// 
+
+// const sequelize = require("../server/dbcontroller.js");
+
+// const dads = require("../dbModels/dads")
+// const post = require("../dbModels/post")
+// const auth = require("../dbModels/auth")
+
+// dads.hasmany(auth,post);
+
+// sequelize
+// .sync({force: true})
+// .then((result) => {
+//     console.log(result);
+// })
+// .catch((err) => {
+//     console.log(err);
+// });
 
 // DB CALL END
 //

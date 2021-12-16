@@ -1,21 +1,26 @@
 const Sequelize = require("sequelize");
-const sequelize = require("../util/database");
+const sequelize = require("../server/dbcontroller");
 
-const Customer = sequelize.define("dads", {
+const auth = sequelize.define("auth", {
   id: {
     type: Sequelize.INTEGER,
     autoIncrement: true,
     allowNull: false,
     primaryKey: true,
   },
-  name: {
+  hash: {
     type: Sequelize.STRING,
     allowNull: false,
   },
+  id: {
+    type: Sequelize.INTEGER,
+    autoIncrement: true,
+    allowNull: false,
+  },
   email: {
-    type: Sequelize.STRING,
+    type: Sequelize.VARCHAR,
     allowNull: false,
   },
 });
 
-module.exports = Customer;
+module.exports = auth;
