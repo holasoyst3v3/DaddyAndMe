@@ -171,7 +171,7 @@ END MORE BUTTON */
   /* visibility: hidden; */
 }
 
-.modal-container {
+.modal-container3 {
   background-color: rgb(0, 0, 0);
   display: flex;
   flex-direction: row;
@@ -183,7 +183,7 @@ END MORE BUTTON */
   margin-top: 0px;
   margin-left: 200px;
   margin-right: 200px;
-
+  visibility: hidden;
 }
 
 .modal {

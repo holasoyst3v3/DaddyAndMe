@@ -88,17 +88,17 @@
     </style>
     <div class="auth">
         <div class="credentials" id="contact-container" style="font-family: 'rye', cursive;">
-            <form class="modal" method="post">
+            <form class="modal">
                 <h3>WELCOME BACK!</h3>
                 <h4>PLEASE ENTER YOUR CREDENTIALS</h4>
                 <fieldset>
-                    <input placeholder="Enter Your Email" type="email" tabindex="1" required autofocus class="email" >
+                    <input placeholder="Enter Your Email" type="email" tabindex="1" autofocus class="email" id="email" >
                 </fieldset>
                 <fieldset>
-                    <input placeholder="Enter Your Password" type="password" tabindex="2" required class="password" id="password">
+                    <input placeholder="Enter Your Password" type="password" tabindex="2" class="password" id="password">
                 </fieldset>
                 <fieldset>
-                    <button name="login" type="submit" id="dadLogin" data-submit="...Sending" class="login"
+                    <button name="login" type="submit" id="dadLogin" class="login"
                         tabindex="3">
                         LOG IN
                     </button>
@@ -106,61 +106,60 @@
                 <br><br>
                 <h3>DON'T HAVE AN ACCOUNT?</h3>
                 <h4>JOIN THE FATHERHOOD BROTHERHOOD!</h4>
-                <button name="signup" type="submit" id="dadSignup" data-submit="...Sending" class="signup">
+                <button name="signup" type="submit" id="dadSignup" class="signup">
                     SIGN UP
                 </button>
                 </fieldset>
             </form>
         </div>
-        <div class="modal-container" id="register-container" style="font-family: 'rye', cursive;">
-            <form class="modal" method="post">
+        <div class="modal-container3" id="register-container" style="font-family: 'rye', cursive;">
+            <form class="modal">
                 <h3>WELCOME TO THE FATHERHOOD, BROTHERHOOD!</h3>
                 <h4>PLEASE ENTER YOUR CREDENTIALS</h4>
                 <fieldset>
                     <input placeholder="Enter Your First Name" type="text" tabindex="1" required autofocus
-                        class="firstName" />
+                        class="firstName" id="firstName" />
                 </fieldset>
                 <fieldset>
-                    <input placeholder="Enter Your Last Name" type="text" tabindex="2" required autofocus
-                        class="lastName" />
+                    <input placeholder="Enter Your Last Name" type="text" tabindex="2" autofocus
+                        class="lastName" id="lastName"/>
                 </fieldset>
                 <fieldset>
-                    <input placeholder="Enter Your Email" type="email" tabindex="3" required autofocus class="email" />
+                    <input placeholder="Enter Your Email" type="email" tabindex="3" required autofocus class="email" id="emailTwo"/>
                 </fieldset>
                 <fieldset>
                     <input placeholder="Enter Your Username" type="text" tabindex="4" required autofocus
-                        class="username" />
+                        class="username" id="username"/>
                 </fieldset>
                 <fieldset>
-                    <input placeholder="Enter Your Password" type="password" tabindex="5" required class="password" />
+                    <input placeholder="Enter Your Password" type="password" tabindex="5" required class="password" id="passwordTwo" />
                 </fieldset>
-                <!-- <fieldset>
-                <input placeholder="confirm Your Password" type="password" tabindex="2" required class="password" />
-            </fieldset> -->
                 <fieldset>
-                    <button name="signupSub" type="submit" id="dadSubmit" data-submit="...Sending" class="signupSub">
+                    <button name="signupSub" type="submit" id="dadSubmit"  class="signupSub">
                         SIGN UP
                     </button>
                 </fieldset>
             </form>
         </div>
 
-        <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+        <!-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script> -->
         <script type="text/javascript">
-            const email = document.getElementsByClassName(".email");
-            const password = document.getElementsByClassName(".password");
-            const btnLog = document.getElementsByClassName(".login");
-            const firstName = document.getElementsByClassName(".firstName");
-            const lastName = document.getElementsByClassName(".lastName")
-            const username = document.getElementsByClassName(".username")
-            const btnUp = document.getElementsByClassName(".signup");
-            const btnSub = document.getElementsByClassName(".signupSub");
-            const logContainer = document.getElementsByClassName(".login-container");
-            const signContainer = document.getElementsByClassName(".signup-container");
+            const email = document.getElementById("email");
+            const password = document.getElementById("password");
+            const firstName = document.getElementById("firstName");
+            const lastName = document.getElementById("lastName")
+            const username = document.getElementById("username")
+            const btnLog = document.getElementById("dadLogin");
+            // const btnLog = document.getElementsByClassName(".login");
+            const btnUp = document.getElementById("dadSignup");
+            // const btnUp = document.getElementsByClassName(".signup");
+            const btnSub = document.getElementById("dadSubmit");
+            // const btnSub = document.getElementsByClassName(".signupSub");
+            const logContainer = document.getElementById("contact-container");
+            const signContainer = document.getElementById("register-container");
 
 
             function validateLogin() {
-
                 btnLog.addEventListener('click', () => {
                     e.preventDefault();
                     if (email.value == "" || password.value == "") {
@@ -170,33 +169,26 @@
                     }
                 });
             }
-            validateLogin();
-
-            function openSignUp() {
-
+            // validateLogin();
+                
                 btnUp.addEventListener('click', () => {
-                    e.preventDefault();
-                    if (email.value == "" || password.value == "") {
-                        emptyerror();
-                    } else {
-                        success();
-                    }
+                    signContainer.style.visibility = "visible"
+                    logContainer.style.visbility = "hidden"
                 });
-            }
-            openSignUp();
 
-            function signUp() {
 
-                btnSub.addEventListener('click', () => {
-                    e.preventDefault();
-                    if (email.value == "" || password.value == "") {
-                        emptyerror();
-                    } else {
-                        success();
-                    }
-                });
-            }
-            signUp();
+            // function signUp() {
+
+            //     btnSub.addEventListener('click', () => {
+            //         e.preventDefault();
+            //         if (email.value == "" || password.value == "") {
+            //             emptyerror();
+            //         } else {
+            //             success();
+            //         }
+            //     });
+            // }
+            // signUp();
 
 
 
@@ -216,7 +208,7 @@
                 });
             }
         </script>
-        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
 
         <img></img>
     </div>
