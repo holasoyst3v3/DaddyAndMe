@@ -14,13 +14,13 @@
         type="image/icon type">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="hacks.css">
+    <link rel="stylesheet" href="auth.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
     <header id="title" style="font-family: rye;">DADDY & ME</header>
 
-    <div class="dropmore" style="font-family: 'rye', cursive">
+    <div class="dropmore" style="font-family: 'rye', cursive; display: none;">
         <button class="morebtn" style="font-family: 'rye', cursive">NAVIGATE</button>
         <div class="dropmore-content">
             <a href="homepage.html">HOME</a>
@@ -39,135 +39,191 @@
 </head>
 
 <body>
-    <a href="https://github.com/holasoyst3v3" class="github-corner" aria-label=" GitHub" tabindex="-1" target="_blank" rel="noopener noreferrer">
-        <svg width="80" height="80" viewBox="0 0 250 250" style=" position: absolute; top: 0; right: 0; border: 0; fill: #020f88; color: rgb(255, 255, 255);">
-          <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body">
-          </path>
+    <a href="https://github.com/holasoyst3v3" class="github-corner" aria-label=" GitHub" tabindex="-1" target="_blank"
+        rel="noopener noreferrer">
+        <svg width="80" height="80" viewBox="0 0 250 250"
+            style=" position: absolute; top: 0; right: 0; border: 0; fill: #020f88; color: rgb(255, 255, 255);">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body">
+            </path>
         </svg>
-      </a>
-        <style>
-        .github-corner:hover .octo-arm { animation: octocat-wave 560ms ease-in-out; }
-            @keyframes octocat-wave {
-            0%,
-            100% { transform: rotate(0); }
-        
-            20%,
-            60% { transform: rotate(-25deg); }
-        
-            40%,
-            80% { transform: rotate(10deg); }
-          }
-        
-          @media (max-width: 500px) {
-            .github-corner:hover .octo-arm { animation: none; }
-            .github-corner .octo-arm { animation: octocat-wave 560ms ease-in-out; }
-          }
-        </style>
-
-<div class="login-container">
-    <form id="contact" method="post">
-      <h3>WELCOME BACK!</h3>
-      <h4>PLEASE ENTER YOUR CREDENTIALS</h4>
-      <fieldset>
-        <input
-          placeholder="Enter Your Email"
-          type="text"
-          tabindex="1"
-          required
-          autofocus
-          class="email"/>
-      </fieldset>
-      <fieldset>
-        <input
-          placeholder="Enter Your Password"
-          type="password"
-          tabindex="2"
-          required
-          class="password"/>
-      </fieldset>
-      <fieldset>
-        <button
-          name="login"
-          type="submit"
-          id="dad-login"
-          data-submit="...Sending"
-          class="login">
-          LOG IN
-        </button>
-        <button
-        name="signup"
-        type="submit"
-        id="dad-signup"
-        data-submit="...Sending"
-        class="signup">
-        SIGN UP
-      </button>
-      </fieldset>
-    </form>
-  </div>
-
-  <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-  <script type="text/javascript">
-      
-    function validate() {
-      let email = document.querySelector(".email");
-      let password = document.querySelector(".password");
-      let btnLog = document.querySelector(".login");
-      let firstName = document.querySelector(".firstName");
-      let lastName = document.querySelector(".lastName")
-      let username = document.querySelector(".username")
-      let btnUp = document.querySelector(".signup");
-
-
-      btnlog.addEventListener("click", (e) => {
-        e.preventDefault();
-
-        if (email.value == "" || password.value == "") {
-          emptyerror();
-        } else {
-            sendmail(name.value, email.value, msg.value)
-            success();
-            // document.contact.reset();
-
+    </a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out;
         }
-      });
-    }
-    validate();
 
-    function emptyerror() {
-      swal({
-        icon: "warning",
-        title: "Try again",
-        text: "Fields cannot be empty!",
-      });
-    }
+        @keyframes octocat-wave {
 
-    function error() {
-      swal({
-        icon: "error",
-        title: "Oops...",
-        text: "Something went wrong! Try again.",
-      });
-    }
+            0%,
+            100% {
+                transform: rotate(0);
+            }
 
-    function success() {
-      swal({
-        icon: "success",
-        title: "AWESOME!",
-        text: "Welcome back daddy-o!!",
-      });
-    }
-  </script>
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+            20%,
+            60% {
+                transform: rotate(-25deg);
+            }
 
-    <div>
+            40%,
+            80% {
+                transform: rotate(10deg);
+            }
+        }
+
+        @media (max-width: 500px) {
+            .github-corner:hover .octo-arm {
+                animation: none;
+            }
+
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out;
+            }
+        }
+    </style>
+    <div class="auth">
+        <div class="credentials" id="contact-container" style="font-family: 'rye', cursive;">
+            <form class="modal" method="post">
+                <h3>WELCOME BACK!</h3>
+                <h4>PLEASE ENTER YOUR CREDENTIALS</h4>
+                <fieldset>
+                    <input placeholder="Enter Your Email" type="email" tabindex="1" required autofocus class="email" >
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Enter Your Password" type="password" tabindex="2" required class="password" id="password">
+                </fieldset>
+                <fieldset>
+                    <button name="login" type="submit" id="dadLogin" data-submit="...Sending" class="login"
+                        tabindex="3">
+                        LOG IN
+                    </button>
+                </fieldset>
+                <br><br>
+                <h3>DON'T HAVE AN ACCOUNT?</h3>
+                <h4>JOIN THE FATHERHOOD BROTHERHOOD!</h4>
+                <button name="signup" type="submit" id="dadSignup" data-submit="...Sending" class="signup">
+                    SIGN UP
+                </button>
+                </fieldset>
+            </form>
+        </div>
+        <div class="modal-container" id="register-container" style="font-family: 'rye', cursive;">
+            <form class="modal" method="post">
+                <h3>WELCOME TO THE FATHERHOOD, BROTHERHOOD!</h3>
+                <h4>PLEASE ENTER YOUR CREDENTIALS</h4>
+                <fieldset>
+                    <input placeholder="Enter Your First Name" type="text" tabindex="1" required autofocus
+                        class="firstName" />
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Enter Your Last Name" type="text" tabindex="2" required autofocus
+                        class="lastName" />
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Enter Your Email" type="email" tabindex="3" required autofocus class="email" />
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Enter Your Username" type="text" tabindex="4" required autofocus
+                        class="username" />
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Enter Your Password" type="password" tabindex="5" required class="password" />
+                </fieldset>
+                <!-- <fieldset>
+                <input placeholder="confirm Your Password" type="password" tabindex="2" required class="password" />
+            </fieldset> -->
+                <fieldset>
+                    <button name="signupSub" type="submit" id="dadSubmit" data-submit="...Sending" class="signupSub">
+                        SIGN UP
+                    </button>
+                </fieldset>
+            </form>
+        </div>
+
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+        <script type="text/javascript">
+            const email = document.getElementsByClassName(".email");
+            const password = document.getElementsByClassName(".password");
+            const btnLog = document.getElementsByClassName(".login");
+            const firstName = document.getElementsByClassName(".firstName");
+            const lastName = document.getElementsByClassName(".lastName")
+            const username = document.getElementsByClassName(".username")
+            const btnUp = document.getElementsByClassName(".signup");
+            const btnSub = document.getElementsByClassName(".signupSub");
+            const logContainer = document.getElementsByClassName(".login-container");
+            const signContainer = document.getElementsByClassName(".signup-container");
+
+
+            function validateLogin() {
+
+                btnLog.addEventListener('click', () => {
+                    e.preventDefault();
+                    if (email.value == "" || password.value == "") {
+                        emptyerror();
+                    } else {
+                        success();
+                    }
+                });
+            }
+            validateLogin();
+
+            function openSignUp() {
+
+                btnUp.addEventListener('click', () => {
+                    e.preventDefault();
+                    if (email.value == "" || password.value == "") {
+                        emptyerror();
+                    } else {
+                        success();
+                    }
+                });
+            }
+            openSignUp();
+
+            function signUp() {
+
+                btnSub.addEventListener('click', () => {
+                    e.preventDefault();
+                    if (email.value == "" || password.value == "") {
+                        emptyerror();
+                    } else {
+                        success();
+                    }
+                });
+            }
+            signUp();
+
+
+
+            function emptyerror() {
+                swal({
+                    icon: "warning",
+                    title: "Try again",
+                    text: "Fields cannot be empty!",
+                });
+            }
+
+            function success() {
+                swal({
+                    icon: "success",
+                    title: "AWESOME!",
+                    text: "WELL DONE!",
+                });
+            }
+        </script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+        <img></img>
     </div>
-    <img></img>
-</div>
     <script></script>
 </body>
 
 <footer>
-    </footer>
+</footer>
 
 </html>

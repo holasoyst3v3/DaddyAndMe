@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rye&display=swap");
 html {
   background-color: #212121;
 }
@@ -11,7 +11,6 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
-  /* text-rendering: optimizeLegibility; */
 }
 
 #title {
@@ -32,7 +31,7 @@ html {
 *
 *
 */
- .morebtn {
+.morebtn {
   float: left;
   left: 0px;
   top: 74px;
@@ -46,7 +45,6 @@ html {
 
 .dropmore {
   float: left;
-
 }
 
 .dropmore-content {
@@ -143,62 +141,96 @@ END MORE BUTTON */
   *
   /* END MENU BUTTON */
 
-body {
-  font-family: 'rye', cursive;
-  font-weight: 100;
-  font-size: 12px;
-  line-height: 20px;
-}
-
-.container {
+.auth {
   background-color: black;
   border-left: 1px solid #ff0000a6;
   border-right: 1px solid #ff0000a6;
+  display: flex;
+  flex-direction: column;
   padding: 40px;
   margin-top: 0px;
   margin-left: 200px;
   margin-right: 200px;
+  height: 77vh;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+
+.credentials {
+  background-color: rgb(0, 0, 0);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  height: 70vh;
+  padding: 40px;
+  margin-top: 0px;
+  margin-left: 200px;
+  margin-right: 200px;
+  /* visibility: hidden; */
 }
 
-#contact {
+.modal-container {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: fixed;
+  height: 70vh;
+  padding: 40px;
+  margin-top: 0px;
+  margin-left: 200px;
+  margin-right: 200px;
+
+}
+
+.modal {
   max-width: 800px;
+  height: 100%;
   width: 100%;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   position: relative;
 }
 
-#contact input[class="name"],
-#contact input[class="email"],
-#contact input[class="message"],
-#contact textarea,
-#contact button[class="submit"] {
-  font: 400 12px/16px  'rye', cursive;
+.modal input[class="password"],
+.modal input[class="email"],
+.modal input[class="firstName"],
+.modal input[class="lastName"],
+.modal input[class="username"],
+.modal button[class="login"],
+.modal button[class="signup"],
+.modal button[class="signupSub"] {
+  font: 400 12px/16px "rye", cursive;
+}
+.modal button[class="login"],
+.modal button[class="signup"],
+.modal button[class="signupSub"] {
+  font: 400 12px/16px "rye", cursive;
 }
 
-#contact {
-  background: #F9F9F9;
-  padding: 25px;
-  margin: 150px 0;
-  border-radius: 10px;
-  box-shadow: 0 0 40px 0 rgb(255, 0, 0), 0 5px 5px 0 rgba(255, 255, 255, 0.856);
+.modal {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 40px 0 rgb(255, 0, 0), 0 5px 5px 0 rgb(255, 255, 255);
 }
 
-#contact h3 {
+.modal h3 {
   display: block;
   font-size: 30px;
   font-weight: 300;
   margin-bottom: 10px;
+  text-align: center;
 }
 
-#contact h4 {
+.modal h4 {
   margin: 5px 0 15px;
   display: block;
   font-size: 13px;
   font-weight: 400;
+  text-align: center;
 }
 
 fieldset {
@@ -209,34 +241,39 @@ fieldset {
   width: 100%;
 }
 
-#contact input[class="name"],
-#contact input[class="email"],
-#contact input[class="message"],
-#contact textarea {
+.modal input[class="password"],
+.modal input[class="email"],
+.modal input[class="firstName"],
+.modal input[class="lastName"],
+.modal input[class="username"],
+.modal textarea {
   width: 100%;
   border: solid #ff0000a6;
   background: white;
   margin: 0 0 5px;
   padding: 10px;
 }
-
-#contact input[class="name"]:hover,
-#contact input[class="email"]:hover,
-#contact input[class="message"]:hover,
-#contact textarea:hover {
+.modal input[class="password"]:hover,
+.modal input[class="email"]:hover,
+.modal input[class="firstName"]:hover,
+.modal input[class="lastName"]:hover,
+.modal input[class="username"]:hover,
+.modal textarea:hover {
   -webkit-transition: border-color 0.3s ease-in-out;
   -moz-transition: border-color 0.3s ease-in-out;
   transition: border-color 0.3s ease-in-out;
   border: 1px solid #aaa;
 }
 
-#contact textarea {
+.modal textarea {
   height: 100px;
   max-width: 100%;
   resize: none;
 }
 
-#contact button[class="submit"] {
+.modal button[class="login"],
+.modal button[class="signup"],
+.modal button[class="signupSub"] {
   cursor: pointer;
   width: 100%;
   border: none;
@@ -247,7 +284,9 @@ fieldset {
   font-size: 15px;
 }
 
-#contact button[class="submit"]:hover {
+.modal button[class="login"]:hover,
+.modal button[class="signup"]:hover,
+.modal button[class="signupSub"]:hover {
   background: #ff0000;
   border: 1px solid rgb(197, 0, 0);
   -webkit-transition: background 0.3s ease-in-out;
@@ -255,16 +294,46 @@ fieldset {
   transition: background-color 0.3s ease-in-out;
 }
 
-#contact button[class="submit"]:active {
+.modal button[class="login"]:active,
+.modal button[class="signup"]:active,
+.modal button[class="signupSub"]:active {
   box-shadow: inset 0 1px 3px rgba(255, 0, 0, 0.5);
 }
 
-#contact input:focus,
-#contact textarea:focus {
+.modal button[class="login"],
+.modal button[class="signup"],
+.modal button[class="signupSub"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: rgba(255, 0, 0, 0.644);
+  color: #000000;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.modal button[class="login"]:hover,
+.modal button[class="signup"]:hover,
+.modal button[class="signupSub"]:hover {
+  background: #ff0000;
+  border: 1px solid rgb(197, 0, 0);
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.modal button[class="login"]:active,
+.modal button[class="signup"]:active,
+.modal button[class="signupSub"]:active {
+  box-shadow: inset 0 1px 3px rgba(255, 0, 0, 0.5);
+}
+
+.modal input:focus,
+.modal textarea:focus {
   outline: 0;
   border: 2px solid rgb(197, 0, 0);
 }
-
 ::-webkit-input-placeholder {
   color: rgb(0, 0, 0);
 }
@@ -280,21 +349,6 @@ fieldset {
 :-ms-input-placeholder {
   color: #888;
 }
-
-/* .loader{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top:0px;
-    left:0px;
-    background: rgb(0, 0, 0);
-    display:none;
-} */
-
 
 footer {
   background-color: #ff0000a6;
