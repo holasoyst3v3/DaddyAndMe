@@ -200,12 +200,15 @@ END MORE BUTTON */
 .modal input[class="lastName"],
 .modal input[class="username"],
 .modal button[class="login"],
+.modal a[class="guest"],
 .modal button[class="signup"],
 .modal button[class="signupSub"],
 .modal button[class="closeSub"] {
   font: 400 12px/16px "rye", cursive;
 }
+
 .modal button[class="login"],
+.modal a[class="guest"],
 .modal button[class="signup"],
 .modal button[class="closeSub"],
 .modal button[class="signupSub"] {
@@ -273,7 +276,10 @@ fieldset {
   resize: none;
 }
 
+
+
 .modal button[class="login"],
+.modal a[class="guest"],
 .modal button[class="signup"],
 .modal button[class="closeSub"],
 .modal button[class="signupSub"] {
@@ -288,6 +294,7 @@ fieldset {
 }
 
 .modal button[class="login"]:hover,
+.modal a[class="guest"]:hover,
 .modal button[class="signup"]:hover,
 .modal button[class="closeSub"]:hover,
 .modal button[class="signupSub"]:hover {
@@ -299,6 +306,7 @@ fieldset {
 }
 
 .modal button[class="login"]:active,
+.modal a[class="guest"]:active,
 .modal button[class="signup"]:active,
 .modal button[class="closeSub"]:active,
 .modal button[class="signupSub"]:active {
@@ -306,6 +314,7 @@ fieldset {
 }
 
 .modal button[class="login"],
+.modal a[class="guest"],
 .modal button[class="signup"],
 .modal button[class="closeSub"],
 .modal button[class="signupSub"] {
@@ -320,6 +329,7 @@ fieldset {
 }
 
 .modal button[class="login"]:hover,
+.modal a[class="guest"]:hover,
 .modal button[class="signup"]:hover,
 .modal button[class="closeSub"]:hover,
 .modal button[class="signupSub"]:hover {
@@ -331,6 +341,7 @@ fieldset {
 }
 
 .modal button[class="login"]:active,
+.modal a[class="guest"]:active,
 .modal button[class="signup"]:active,
 .modal button[class="closeSub"]:active,
 .modal button[class="signupSub"]:active {

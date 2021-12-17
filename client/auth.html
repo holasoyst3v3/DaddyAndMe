@@ -32,7 +32,6 @@
         <button class="menubtn" style="font-family: 'rye', cursive">MENU</button>
         <div class="dropmenu-content">
             <a href="auth.html">LOG IN/ SIGN UP</a>
-            <a href="homepage.html">GUEST IN</a>
             <a href="form.html">CONTACT ME!</a>
         </div>
     </div>
@@ -103,6 +102,9 @@
                         LOG IN
                     </button>
                 </fieldset>
+                <fieldset>
+                    <a href="homepage.html" class="guest">GUEST IN</a>
+                </fieldset>
                 <br><br>
                 <h3>DON'T HAVE AN ACCOUNT?</h3>
                 <h4>JOIN THE FATHERHOOD BROTHERHOOD!</h4>
@@ -137,6 +139,7 @@
                         id="passwordTwo" />
                 </fieldset>
                 <fieldset>
+
                     <button name="signupSub" type="button" id="dadSubmit" class="signupSub">
                         SIGN UP
                     </button>
@@ -163,6 +166,7 @@
             const logContainer = document.getElementById("contact-container");
             const signContainer = document.getElementById("register-container");
             const btnClose = document.getElementById('closeSubmit');
+            const swalOk = document.getElementsByClassName('swal-button swal-button--confirm')
 
 
             function validateLogin() {
@@ -195,7 +199,7 @@
                     // if (firstName.value == "" || lastName.value == "" || email.value == "" || username.value == "" || password.value == "") {
                     //     emptyerror();
                     // } else {
-                        success();
+                    success();
                     // }
                 });
             }
@@ -216,9 +220,19 @@
                     icon: "success",
                     title: "AWESOME!",
                     text: "WELCOME!",
+                    button: "GO!"
                 });
+                // document.getElementsByClassName("swal-button swal-button--confirm").onclick = function () {
+                //     location.href = "homepage.html";
+                // };
+                // onclick="window.location.href='homepage.html'"
             }
         </script>
+        <!-- <script type="text/javascript">
+            document.getElementsByClassName("swal-button swal-button--confirm").onclick;  {
+                location.href = "http://127.0.0.1:5500/client/homepage.html";
+            };
+        </script> -->
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
         <img></img>
