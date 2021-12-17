@@ -155,7 +155,7 @@ html {
   border-right: 1px solid #ff0000a6;
   display: flex;
   flex-direction: column;
-  height: 70vh;
+  height: 80vh;
   padding: 40px;
   margin-top: 0px;
   margin-left: 200px;
@@ -166,15 +166,15 @@ html {
 }
 
 .modal_container {
-  background-color: rgba(255, 0, 0, 0.226);
+  background-color: rgba(0, 0, 0, 0.795);
   display: flex;
   align-items: center;
   justify-content: center;
   position: fixed;
   border-radius: 30px;
   top: 220px;
-  left: 585px;
-  height: 50vh;
+  left: 575px;
+  height: 60vh;
   width: 40vw;
   /* opacity: 0; */
   visibility: hidden;
@@ -182,23 +182,30 @@ html {
 
 
 .modal{
-  background-color: rgba(255, 0, 0, 0.226);
+  background-color: rgba(255, 0, 0, 0.671);
   border-radius: 30px;
-  box-shadow: rgba(0, 0, 0, 0.226);
-  width: 600px;
+  border-color: #212121;
+  box-shadow: 0 0 40px 0 rgb(255, 0, 0), 0 5px 5px 0 rgba(255, 255, 255, 0.856);
+  width: 690px;
   max-width: 100%;
   text-align: center;
 
 }
 
+#feed-open,
+#diaper-open,
 #sleep-open {
   background-color: #212121;
+  font-size: 20px;
   border: 1px solid #ff0000a6;
-  height: 40px;
-  width: 300px;
+  box-shadow: 0 0 40px 0 rgb(255, 0, 0), 0 5px 5px 0 rgba(255, 0, 0, 0.856);
+  height: 70px;
+  width: 400px;
   text-align: center;
 }
 
+#feed-close,
+#diaper-close,
 #sleep-close {
   background-color: #212121;
   border: 1px solid #ff0000a6;
@@ -207,79 +214,22 @@ html {
   text-align: center;
 } 
 
-#sleep-open:hover {
-  background: #888888;
-}
-
-#sleep-close:hover {
-  background: #888888;
-}
-
-#feed-open {
-  background-color: #212121;
-  border: 1px solid #ff0000a6;
-  height: 40px;
-  width: 300px;
-  text-align: center;
-}
-
-#feed-close {
-  background-color: #212121;
-  border: 1px solid #ff0000a6;
-  height: 40px;
-  width: 300px;
-  text-align: center;
-} 
-
-#feed-open:hover {
-  background: #888888;
-}
-
-#feed-close:hover {
-  background: #888888;
-}
-
-#diaper-open {
-  background-color: #212121;
-  border: 1px solid #ff0000a6;
-  height: 40px;
-  width: 300px;
-  text-align: center;
-}
-
-#diaper-close {
-  background-color: #212121;
-  border: 1px solid #ff0000a6;
-  height: 40px;
-  width: 300px;
-  text-align: center;
-} 
-
+#sleep-open:hover,
+#feed-open:hover,
 #diaper-open:hover {
   background: #888888;
 }
 
-#diaper-close:hover {
+#sleep-close:hover,
+#diaper-close:hover,
+#feed-close:hover {
   background: #888888;
 }
 
-/* #btn {
-  background-color: #212121;
-  border: 1px solid #ff0000a6;
-  padding-left: 70px;
-  padding-right: 70px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin-left: 300px;
-  margin-right: 300px;
-  margin-bottom: 40px;
-  justify-content: center;
-  text-align: center;
-} */
 
 footer {
   background-color: #ff0000a6;
-  height: 17vh;
+  height: 7vh;
   display: flex;
   flex-flow: row;
   justify-content: center;

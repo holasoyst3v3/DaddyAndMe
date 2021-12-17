@@ -92,14 +92,14 @@
                 <h3>WELCOME BACK!</h3>
                 <h4>PLEASE ENTER YOUR CREDENTIALS</h4>
                 <fieldset>
-                    <input placeholder="Enter Your Email" type="email" tabindex="1" autofocus class="email" id="email" >
+                    <input placeholder="Enter Your Email" type="email" tabindex="1" autofocus class="email" id="email">
                 </fieldset>
                 <fieldset>
-                    <input placeholder="Enter Your Password" type="password" tabindex="2" class="password" id="password">
+                    <input placeholder="Enter Your Password" type="password" tabindex="2" class="password"
+                        id="password">
                 </fieldset>
                 <fieldset>
-                    <button name="login" type="submit" id="dadLogin" class="login"
-                        tabindex="3">
+                    <button name="login" type="submit" id="dadLogin" class="login" tabindex="3">
                         LOG IN
                     </button>
                 </fieldset>
@@ -121,31 +121,33 @@
                         class="firstName" id="firstName" />
                 </fieldset>
                 <fieldset>
-                    <input placeholder="Enter Your Last Name" type="text" tabindex="2" autofocus
-                        class="lastName" id="lastName"/>
+                    <input placeholder="Enter Your Last Name" type="text" tabindex="2" autofocus class="lastName"
+                        id="lastName" />
                 </fieldset>
                 <fieldset>
-                    <input placeholder="Enter Your Email" type="email" tabindex="3" required autofocus class="email" id="emailTwo"/>
+                    <input placeholder="Enter Your Email" type="email" tabindex="3" required autofocus class="email"
+                        id="emailTwo" />
                 </fieldset>
                 <fieldset>
                     <input placeholder="Enter Your Username" type="text" tabindex="4" required autofocus
-                        class="username" id="username"/>
+                        class="username" id="username" />
                 </fieldset>
                 <fieldset>
-                    <input placeholder="Enter Your Password" type="password" tabindex="5" required class="password" id="passwordTwo" />
+                    <input placeholder="Enter Your Password" type="password" tabindex="5" required class="password"
+                        id="passwordTwo" />
                 </fieldset>
                 <fieldset>
-                    <button name="signupSub" type="submit" id="dadSubmit"  class="signupSub">
+                    <button name="signupSub" type="button" id="dadSubmit" class="signupSub">
                         SIGN UP
                     </button>
-                    <button name="close" type="button" id="closeSubmit"  class="closeSub">
+                    <button name="close" type="button" id="closeSubmit" class="closeSub">
                         CLOSE
                     </button>
                 </fieldset>
             </form>
         </div>
 
-        <!-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script> -->
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
         <script type="text/javascript">
             const email = document.getElementById("email");
             const password = document.getElementById("password");
@@ -173,33 +175,31 @@
                     }
                 });
             }
-            
-            // validateLogin();
-                
-                btnUp.addEventListener('click', (e) => {
+            validateLogin();
+
+            btnUp.addEventListener('click', (e) => {
+                e.preventDefault();
+                signContainer.style.visibility = "visible"
+                logContainer.style.visbility = "hidden"
+            });
+            btnClose.addEventListener('click', (e) => {
+                e.preventDefault();
+                logContainer.style.visbility = "visible"
+                signContainer.style.visibility = "hidden"
+            });
+
+
+            function signUp() {
+                btnSub.addEventListener('click', (e) => {
                     e.preventDefault();
-                    signContainer.style.visibility = "visible"
-                    logContainer.style.visbility = "hidden"
+                    // if (firstName.value == "" || lastName.value == "" || email.value == "" || username.value == "" || password.value == "") {
+                    //     emptyerror();
+                    // } else {
+                        success();
+                    // }
                 });
-                btnClose.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    logContainer.style.visbility = "visible"
-                    signContainer.style.visibility = "hidden"
-                });
-
-
-            // function signUp() {
-
-            //     btnSub.addEventListener('click', () => {
-            //         e.preventDefault();
-            //         if (email.value == "" || password.value == "") {
-            //             emptyerror();
-            //         } else {
-            //             success();
-            //         }
-            //     });
-            // }
-            // signUp();
+            }
+            signUp();
 
 
 
@@ -215,11 +215,11 @@
                 swal({
                     icon: "success",
                     title: "AWESOME!",
-                    text: "WELL DONE!",
+                    text: "WELCOME!",
                 });
             }
         </script>
-        <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
         <img></img>
     </div>

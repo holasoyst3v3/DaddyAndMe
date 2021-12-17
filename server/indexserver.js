@@ -19,22 +19,7 @@ app.use('/media', express.static(path.join(__dirname, '../media')))
 // 
 // 
 
-// const inventory = ['greeting card', 'wagon', 'pancakes', 'lightsabers', 'star destroyers', 'warthogs', 'AC-130']
 
-// app.get('/api/inventory', (req, res) => {
-//     // console.log(req)
-//     if (req.query.item){
-//         const filteredItems =  inventory.filter(invItem => invItem.toLowerCase().includes(req.query.item.toLowerCase()))
-//         res.status(200).send(filteredItems)
-//     } else {
-        
-//         res.status(200).send(inventory)
-//    }
-// })
-
-// app.get('/api/inventory/:index', (req, res) => {
-//     res.status(200).send(inventory[+req.params.index])
-// })
 
 //POST CODE END//
 // 
