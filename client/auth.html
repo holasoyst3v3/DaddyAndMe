@@ -138,6 +138,9 @@
                     <button name="signupSub" type="submit" id="dadSubmit"  class="signupSub">
                         SIGN UP
                     </button>
+                    <button name="close" type="button" id="closeSubmit"  class="closeSub">
+                        CLOSE
+                    </button>
                 </fieldset>
             </form>
         </div>
@@ -157,10 +160,11 @@
             // const btnSub = document.getElementsByClassName(".signupSub");
             const logContainer = document.getElementById("contact-container");
             const signContainer = document.getElementById("register-container");
+            const btnClose = document.getElementById('closeSubmit');
 
 
             function validateLogin() {
-                btnLog.addEventListener('click', () => {
+                btnLog.addEventListener('click', (e) => {
                     e.preventDefault();
                     if (email.value == "" || password.value == "") {
                         emptyerror();
@@ -169,11 +173,18 @@
                     }
                 });
             }
+            
             // validateLogin();
                 
-                btnUp.addEventListener('click', () => {
+                btnUp.addEventListener('click', (e) => {
+                    e.preventDefault();
                     signContainer.style.visibility = "visible"
                     logContainer.style.visbility = "hidden"
+                });
+                btnClose.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    logContainer.style.visbility = "visible"
+                    signContainer.style.visibility = "hidden"
                 });
 
 

@@ -8,7 +8,11 @@ const dads = sequelize.define("dads", {
     allowNull: false,
     primaryKey: true,
   },
-  name: {
+  firstName: {
+    type: Sequelize.VARCHAR,
+    allowNull: false,
+  },
+  lastName: {
     type: Sequelize.VARCHAR,
     allowNull: false,
   },

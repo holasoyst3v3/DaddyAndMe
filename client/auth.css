@@ -201,11 +201,13 @@ END MORE BUTTON */
 .modal input[class="username"],
 .modal button[class="login"],
 .modal button[class="signup"],
-.modal button[class="signupSub"] {
+.modal button[class="signupSub"],
+.modal button[class="closeSub"] {
   font: 400 12px/16px "rye", cursive;
 }
 .modal button[class="login"],
 .modal button[class="signup"],
+.modal button[class="closeSub"],
 .modal button[class="signupSub"] {
   font: 400 12px/16px "rye", cursive;
 }
@@ -273,6 +275,7 @@ fieldset {
 
 .modal button[class="login"],
 .modal button[class="signup"],
+.modal button[class="closeSub"],
 .modal button[class="signupSub"] {
   cursor: pointer;
   width: 100%;
@@ -286,6 +289,7 @@ fieldset {
 
 .modal button[class="login"]:hover,
 .modal button[class="signup"]:hover,
+.modal button[class="closeSub"]:hover,
 .modal button[class="signupSub"]:hover {
   background: #ff0000;
   border: 1px solid rgb(197, 0, 0);
@@ -296,12 +300,14 @@ fieldset {
 
 .modal button[class="login"]:active,
 .modal button[class="signup"]:active,
+.modal button[class="closeSub"]:active,
 .modal button[class="signupSub"]:active {
   box-shadow: inset 0 1px 3px rgba(255, 0, 0, 0.5);
 }
 
 .modal button[class="login"],
 .modal button[class="signup"],
+.modal button[class="closeSub"],
 .modal button[class="signupSub"] {
   cursor: pointer;
   width: 100%;
@@ -315,6 +321,7 @@ fieldset {
 
 .modal button[class="login"]:hover,
 .modal button[class="signup"]:hover,
+.modal button[class="closeSub"]:hover,
 .modal button[class="signupSub"]:hover {
   background: #ff0000;
   border: 1px solid rgb(197, 0, 0);
@@ -325,6 +332,7 @@ fieldset {
 
 .modal button[class="login"]:active,
 .modal button[class="signup"]:active,
+.modal button[class="closeSub"]:active,
 .modal button[class="signupSub"]:active {
   box-shadow: inset 0 1px 3px rgba(255, 0, 0, 0.5);
 }

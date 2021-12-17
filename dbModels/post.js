@@ -21,3 +21,5 @@ const post = sequelize.define("post", {
 sequelize.sync()
 
 module.exports = post;
+
+user input to bodyobj => axios backend
