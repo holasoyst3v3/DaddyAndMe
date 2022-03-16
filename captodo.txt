@@ -1,0 +1,10 @@
+"fake Log-in"
+"fake post with pre arrays"
+
+Revisit
+=REST APIs
+=DB sequelize
+=hashBcrypt
+=makes axios call endpoints
+
+user input to bodyobj => axios backend

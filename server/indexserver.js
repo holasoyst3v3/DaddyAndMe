@@ -13,20 +13,6 @@ app.use(express.json())
 app.use(express.static('client'))
 app.use('/media', express.static(path.join(__dirname, '../media')))
 
-//POST CODE START//
-// 
-// 
-// 
-// 
-
-
-
-//POST CODE END//
-// 
-// 
-// 
-// 
-//
 
 const port = process.env.PORT || 5050;
 

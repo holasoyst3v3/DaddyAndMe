@@ -160,7 +160,10 @@ END MORE BUTTON */
 
 .post #postcontent1,
 .post #postcontent2,
-.post #postcontent3 {
+.post #postcontent3, 
+.post #postcontent4, 
+.post #postcontent5, 
+.post #postcontent6 {
   border: 1px solid #ff0000a6;
   padding-left: 70px;
   padding-right: 70px;
@@ -171,8 +174,39 @@ END MORE BUTTON */
   margin-bottom: 40px;
   justify-content: center;
   text-align: center;
+  /* visibility: hidden; */
 }
 
+#getPost{
+  float: right;
+  color: rgb(255, 255, 255);
+  background-color: #212121;
+  font-family: rye, cursive;
+  font-size: 12px;
+  border: 1px solid #ff0000a6;
+  box-shadow: 0 0 20px 0 rgb(255, 0, 0), 0 2px 2px 0 rgba(255, 0, 0, 0.856);
+  height: 25px;
+  width: 100px;
+}
+
+.postbtn button[id="getPost"]:active {
+  box-shadow: inset 0 1px 3px rgba(255, 0, 0, 0.5);
+}
+
+.buttons{
+  float: right;
+  color: rgb(255, 255, 255);
+  background-color: #212121;
+  font-family: rye, cursive;
+  font-size: 12px;
+  border: 1px solid #ff0000a6;
+  box-shadow: 0 0 20px 0 rgb(255, 0, 0), 0 2px 2px 0 rgba(255, 0, 0, 0.856);
+  height: 25px;
+  width: 100px;
+}
+.buttons:active {
+  box-shadow: inset 0 1px 3px rgba(255, 0, 0, 0.5);
+}
 footer {
   background-color: #ff0000a6;
   height: 17vh;
